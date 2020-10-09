@@ -1,6 +1,5 @@
 =begin
-  Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. 
-  The string can contain any char.
+  Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
   Examples input/output:
 
@@ -18,14 +17,8 @@
 =end
 
 def XO(str)
-  x = 0
-  o = 0
-  
-  str.downcase.split("").each do |letter|
-    x +=1 if letter == "x"
-    o +=1 if letter == "o"
-  end
-  x == o
+  str.downcase!
+  (str.count("x") == 0 && str.count("o") == 0) || str.count("x") == str.count("o")
 end
 
 # Best practices
