@@ -30,3 +30,4 @@ def difference_in_ages(ages)
   
   [min, max, max - min]
 end
+

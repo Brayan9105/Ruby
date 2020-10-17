@@ -10,6 +10,7 @@
       Test.assert_equals(repeat_str(2, "ha "),"ha ha ")
   end
 =end
+
 def repeat_str (n, s)
   s*n
 end

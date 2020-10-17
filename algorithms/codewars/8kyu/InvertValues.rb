@@ -19,3 +19,9 @@
 def invert(list)
   list.map { |num| num * -1}
 end
+
+# Best practices
+
+def invert(list)
+  list.map(&:-@)
+end

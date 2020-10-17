@@ -21,6 +21,14 @@
     Test.assert_equals(str_count('', 'z'), 0)
 =end
 
-  def str_count(word, letter)
-    word.count(letter)
+def str_count(word, letter)
+  word.count(letter)
+end
+
+def str_count(word, letter)
+  count = 0
+  word.split('').each do |let|
+    count += 1 if let == letter
   end
+  count
+end
