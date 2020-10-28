@@ -18,3 +18,15 @@ def two_sort(s)
   arr = s.sort.first.split('')
   arr.map.with_index { |letter, i|  i != (arr.size - 1) ? letter += '***' : letter }.join
 end
+
+def two_sort(s)
+  s.min.chars.join('***')
+end
+
+def two_sort(s)
+  s.sort.first.chars.join('***')
+end
+
+def two_sort(s)
+  s.sort[0].chars.join("***")
+end
